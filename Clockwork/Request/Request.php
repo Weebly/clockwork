@@ -102,6 +102,11 @@ class Request
 	public $viewsData = array();
 
 	/**
+	 * Network data array
+	 */
+	public $networkData = array();
+
+	/**
 	 * Custom user data (not used by Clockwork app)
 	 */
 	public $userData;
@@ -168,7 +173,8 @@ class Request
 			'routes'           => $this->routes,
 			'emailsData'       => $this->emailsData,
 			'viewsData'        => $this->viewsData,
-			'userData'         => $this->userData
+			'userData'         => $this->userData,
+			'networkData'      => $this->networkData
 		);
 	}
 
