@@ -107,6 +107,11 @@ class Request
 	public $filesystemData = array();
 
 	/**
+	 * Network data array
+	 */
+	public $networkData = array();
+
+	/**
 	 * Custom user data (not used by Clockwork app)
 	 */
 	public $userData;
@@ -174,7 +179,8 @@ class Request
 			'emailsData'       => $this->emailsData,
 			'viewsData'        => $this->viewsData,
 			'userData'         => $this->userData,
-			'filesystemData'   => $this->filesystemData
+			'filesystemData'   => $this->filesystemData,
+			'networkData'      => $this->networkData
 		);
 	}
 
