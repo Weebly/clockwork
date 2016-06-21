@@ -102,6 +102,11 @@ class Request
 	public $viewsData = array();
 
 	/**
+	 * Filesystem data array
+	 */
+	public $filesystemData = array();
+
+	/**
 	 * Network data array
 	 */
 	public $networkData = array();
@@ -174,6 +179,7 @@ class Request
 			'emailsData'       => $this->emailsData,
 			'viewsData'        => $this->viewsData,
 			'userData'         => $this->userData,
+			'filesystemData'   => $this->filesystemData,
 			'networkData'      => $this->networkData
 		);
 	}
