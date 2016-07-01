@@ -112,6 +112,11 @@ class Request
 	public $networkData = array();
 
 	/**
+	 * Dynamic data array
+	 */
+	public $dynamicData = array();
+
+	/**
 	 * Custom user data (not used by Clockwork app)
 	 */
 	public $userData;
@@ -180,7 +185,8 @@ class Request
 			'viewsData'        => $this->viewsData,
 			'userData'         => $this->userData,
 			'filesystemData'   => $this->filesystemData,
-			'networkData'      => $this->networkData
+			'networkData'      => $this->networkData,
+			"dynamicData"      => $this->dynamicData
 		);
 	}
 
