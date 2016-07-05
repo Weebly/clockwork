@@ -112,6 +112,11 @@ class Request
 	public $networkData = array();
 
 	/**
+	 * Cache data array
+	 */
+	public $cacheData = array();
+
+	/**
 	 * Dynamic data array
 	 */
 	public $dynamicData = array();
@@ -186,6 +191,7 @@ class Request
 			'userData'         => $this->userData,
 			'filesystemData'   => $this->filesystemData,
 			'networkData'      => $this->networkData,
+			'cacheData'        => $this->cacheData,
 			"dynamicData"      => $this->dynamicData
 		);
 	}
